@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" contect="GabrielChen">
+  	<meta name="keywords" contect="Web Audio API">
+	<title>MyPlear</title>
+	<link rel="stylesheet" href="first.css">
+</head>
+<body id="body">
+	<section id="background"><!--背景部分-->
+		<ul type="none">
+			<li><img src="bg/background.jpg" class="bg"></li>
+			<li><img src="bg/a71ea8d3fd1f41343c383360231f95cad1c85ea4.jpg" class="bg"></li>
+			<li><img src="bg/060828381f30e924cb210b514a086e061c95f7cd.jpg" class="bg"></li>
+			<li><img src="bg/20130713090219_FeMay.jpeg" class="bg"></li>
+			<li><img src="bg/005ODKsIgw1f054tkrx3gj31hc0u0136.jpg" class="bg"></li>
+			<li><img src="bg/20150318230531_FN3Qm.jpeg" class="bg"></li>
+			<li><img src="bg/58386579201108152305025678345833412_007.jpg" class="bg"></li>
+		</ul>
+	</section>
+	<audio  id="music" src="music/OneRepublic - Counting Stars.mp3">你的浏览器不支持audio标签
+	</audio>
+	
+	<div id="player">
+		<div class="musicName" id="musicName">OneRepublic - Counting Stars.mp3</div>
+		<div class="spectrogram" id="spectrogramL">
+			<div class="gramBlock gb0" id="lgb0"></div>
+			<div class="gramBlock gb1" id="lgb1"></div>
+			<div class="gramBlock gb2" id="lgb2"></div>
+			<div class="gramBlock gb3" id="lgb3"></div>
+			<div class="gramBlock gb4" id="lgb4"></div>
+			<div class="gramBlock gb5" id="lgb5"></div>
+			<div class="gramBlock gb6" id="lgb6"></div>
+			<div class="gramBlock gb7" id="lgb7"></div>
+			<div class="gramBlock gb8" id="lgb8"></div>
+			<div class="gramBlock gb9" id="lgb9"></div>
+		</div>
+		<div class="spectrogram" id="spectrogramR">
+			<div class="gramBlock gb0" id="rgb0"></div>
+			<div class="gramBlock gb1" id="rgb1"></div>
+			<div class="gramBlock gb2" id="rgb2"></div>
+			<div class="gramBlock gb3" id="rgb3"></div>
+			<div class="gramBlock gb4" id="rgb4"></div>
+			<div class="gramBlock gb5" id="rgb5"></div>
+			<div class="gramBlock gb6" id="rgb6"></div>
+			<div class="gramBlock gb7" id="rgb7"></div>
+			<div class="gramBlock gb8" id="rgb8"></div>
+			<div class="gramBlock gb9" id="rgb9"></div>
+		</div>
+		<div id="picture"><img src="img/t014df5337d6dd52496.png" id="img"></div>
+		<div id="skipTo"></div><!--跳跃时间-->
+		
+		<div id="slide"><!-- 进度条 --></div>
+		<div id="skip" ></div><!--skip部分-->
+		<div id="now"></div><!--目前进程-->
+		<div class="btnColl"><!-- 操控按钮 -->
+			
+			<div class="btn" id="play">
+				<img src="img/play.png" class="btnCon" id="playBtnCon">
+			</div>
+			
+
+			<div class="btn" id="pause">
+				<img src="img/pause.png" class="btnCon" id="pauseBtnCon">
+			</div>
+			
+			
+			<div class="btn" id="next">
+				<img src="img/next.png" class="btnCon" id="nextBtnCon">
+			</div>
+			
+		</div>
+		<div id="volum"></div>
+		<div id="vol"></div>
+		<div id="volFild"></div>
+		
+		<div class="list" id="list"></div>
+
+	</div>
+
+</body>
+<script type="text/javascript" src="musicName.js"></script>
+<script type="text/javascript" src="first.js"></script>
+</html>

@@ -1,0 +1,351 @@
+
+
+body{
+	overflow: hidden;
+}
+
+
+
+#picture{/*旋转图片所在区域*/
+	position: absolute;
+	overflow: hidden;
+	/*left: 43.5%;*/
+	/*text-align: center;*/
+	width: 20.508%;
+	height: 38.043%;
+	left: 39.746%;
+	top: 23%;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	box-shadow: 0px 0px 5px;
+	-moz-box-shadow: 0px 0px 5px;
+	
+	
+}
+
+#img{/*旋转的图片*/
+	width: 100%;
+	height: 100%;
+}
+
+.musicName{/*当前播放的歌歌名*/
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	height: 7%;
+	top: 5%;
+	text-align: center;
+}
+
+#skipTo{/*跳跃时间*/
+	position: absolute;
+	width:15%;
+	height: 6%;
+	text-align: center;
+	left: 42.5%;
+	top: 63%;;
+}
+
+#now{/*当前时间*/
+	position: absolute;
+	width:15%;
+	height: 6%;
+	text-align: center;
+	left: 42.5%;
+	top: 74%;
+}
+
+
+
+.btn{/*3个按钮*/
+	
+	position: absolute;
+	width: 16.634%;
+	height: 95%;
+	
+	text-align: center;
+	cursor: pointer;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	
+	transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	-webkit-transition: box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
+
+	
+}
+
+.btn:hover{/*3个按钮悬停*/
+	/*background-color: rgb(20, 170, 230);*/
+	box-shadow: 0px 0px 10px;
+	-moz-box-shadow: 0px 0px 10px;
+	/*opacity: 0.1;*/
+}
+
+.btnColl{/*整个控制台区域*/
+	position: absolute;
+	height: 13%;
+	width: 40%;
+	left: 30%;
+	/*margin:auto;*/
+	top: 78%;
+	font-size: 50%;
+}
+
+
+
+#play{/*播放按钮的区域*/
+	left: 0;
+
+	opacity: 0.5;
+	
+}
+
+#pause{/*暂停按钮的区域*/
+	left: 0px;
+	opacity: 0.5;
+	display: none;
+
+	
+}
+
+#next{/*切歌按钮的区域*/
+	right: 0px;
+	opacity: 0.5;
+
+}
+
+.btnCon{/*按钮内部图片*/
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	height: 50%;
+	width: 50%;
+	text-align: center;
+	vertical-align:center;
+}
+
+#player{/*整个播放界面*/
+	overflow: hidden;
+	border-radius:15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	position: fixed;
+	width: 512px;
+	height: 276px;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.35);
+	
+	top: 18%;
+	
+	margin: auto;
+
+	transition: background-color 0.2s, box-shadow 0.2s;
+	-moz-transition: background-color 0.2s, box-shadow 0.2s;
+	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
+	-o-transition: background-color 0.2s, box-shadow 0.2s;
+
+	
+}
+
+#player:hover{/*播放界面悬停*/
+	box-shadow: 0px 0px 10px;
+	-moz-box-shadow: 0px 0px 10px;
+	background-color: rgba(255,255,255,0.7);
+}
+
+
+
+
+
+#slide{/*进度条区域*/
+	overflow: hidden;
+	position: absolute;
+	top: 70%;
+	left: -100%;
+	width: 100%;
+	height: 3%;
+	background-color: rgb(123, 116, 116);
+}
+
+#skip{/*进度条在操控台的可填充区域*/
+	background-color: rgb(207, 201, 201); 
+	position: absolute;
+	top: 70%;
+	left: 0%;
+	width: 100%;
+	height: 3%;
+	opacity: 0.2;
+	cursor: pointer;
+	transition: box-shadow 0.1s;
+	-moz-transition: box-shadow 0.1s;
+	-webkit-transition: box-shadow 0.1s;
+	-o-transition: box-shadow 0.1s;
+}
+
+#skip:hover{/*进度条填充区域悬停*/
+	box-shadow: 0px 0px 10px;
+	-moz-box-shadow: 0px 0px 10px;
+}
+
+.list {/*歌单区域*/
+	overflow: scroll;
+	overflow-x: hidden; 
+	cursor: pointer;
+	position: absolute;
+	width: 102%;
+	height: 100%;
+
+	background-color: rgba(90,90,90,0.5);
+	
+	color: white;
+
+	top: 0%;
+	left: 98%；
+
+
+}
+
+.list:hover{/*歌单区域悬停*/
+	
+	box-shadow: 0px 0px 10px;
+	-moz-box-shadow: 0px 0px 10px;
+}
+
+.musicNameInList{/*歌单内的歌名*/
+	margin: 5% 10%;
+	cursor: pointer;
+	color: rgb(200, 185, 185);
+	transition:color 0.2s  ;
+	-moz-transition:color 0.2s  ; /* Firefox 4 */
+	-webkit-transition:color 0.2s  ; /* Safari and Chrome */
+	-o-transition:color 0.2s  ; /* Opera */
+}
+
+.musicNameInList:hover{/*歌单内歌名悬停*/
+	color: rgb(255,255,255);
+}
+
+#volFild{/*音量条填充区域*/
+	background-color: rgb(207, 201, 201);
+	opacity: 0.35;
+	position: absolute;
+	width: 15%;
+	height: 3%;
+	bottom: 3%;
+	left: 82%;
+	cursor: pointer;
+
+	transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	-webkit-transition: box-shadow 0.2s;
+	-o-transition: box-shadow 0.2s;
+
+
+	
+}
+
+#volFild:hover{/*音量条填充区域悬停*/
+	box-shadow: 0px 0px 5px;
+	-moz-box-shadow: 0px 0px 5px;
+}
+
+#vol{/*音量条(实体)*/
+	position: absolute;
+	width: 15%;
+	height: 3%;
+	bottom: 3%;
+	left: 82%;
+	background-color: rgb(123, 116, 116);
+	opacity: 1;
+}
+
+#volum{/*音量数值*/
+	position: absolute;
+	width: 10%;
+	height: 7%;
+	left: 71.5%;
+	bottom: 0%;
+	font-size: 80%;
+}
+
+.spectrogram{/*频谱分析图*/
+	
+	position: absolute;
+	top: 23%;
+	width: 32%;
+	height:38.047%;
+}
+
+.bg{/*各张背景图片*/
+	position: absolute;
+
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 110%;
+
+}
+
+#spectrogramL{/*之左*/
+	left: 6%;
+}
+
+#spectrogramR{/*之右*/
+	right: 6%;
+}
+
+.gramBlock{/*频谱分析图小块*/
+	position: absolute;
+	
+	width: 5%;
+	height: 0%;
+	bottom: 0%;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: 0px 0px 5px;
+	-moz-box-shadow: 0px 0px 5px;
+}
+
+/*各个频谱分析图小块*/
+
+#lgb0,#rgb9{
+	left: 0%;
+}
+
+#lgb1,#rgb8{
+	left: 10%;
+}
+
+#lgb2,#rgb7{
+	left: 20%;
+}
+
+#lgb3,#rgb6{
+	left: 30%;
+}
+
+#lgb4,#rgb5{
+	left: 40%;
+}
+
+#lgb5,#rgb4{
+	left: 50%;
+}
+
+#lgb6,#rgb3{
+	left: 60%;
+}
+
+#lgb7,#rgb2{
+	left: 70%;
+}
+
+#lgb8,#rgb1{
+	left: 80%;
+}
+
+#lgb9,#rgb0{
+	left: 90%;
+}
